@@ -11,7 +11,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/re
     && apk update\
     && mkdir -p /usr/include/nlohmann/ && cd /usr/include/nlohmann/ && wget https://ghself.markxu.online/https://github.com/nlohmann/json/releases/download/v3.10.5/json.hpp \
     && apk add --no-cache git python3 npm make g++ zerotier-one linux-headers\
-    && mkdir /app -p &&  cd /app && git clone --progress https://ghself.markxu.online/https://github.com/key-networks/ztncui.git\
+    && mkdir /app -p &&  cd /app && git clone --progress https://ghself.markxu.online/https://github.com/best/zerotier-ui.git\
     && cd /app/ztncui/src \
     && cp /app/patch/binding.gyp .\
     && echo "开始配置npm环境"\
